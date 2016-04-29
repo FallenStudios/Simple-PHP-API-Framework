@@ -75,6 +75,8 @@
       require_once("config/db.inc.php");
 
       self::$dbObj = new Database($dbHost, $dbUser, $dbPass, $dbName);
+
+      define("DBPREFIX", $dbPrefix);
     }
 
     protected function initSys() {
