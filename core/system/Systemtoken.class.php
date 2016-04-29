@@ -47,7 +47,7 @@
         )
       );
       $this->setTokenType("systemtoken");
-      $this->setTokenTable("uno_systemtoken");
+      $this->setTokenTable("systemtoken");
     }
 
   }
