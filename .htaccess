@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteRule ^([a-zA-Z_-]+)$ index.php?component=$1
+RewriteRule ^([a-zA-Z_-]+)/$ index.php?component=$1
+RewriteRule ^([a-zA-Z_-]+)/([a-zA-Z_-]+)$ index.php?component=$1&function=$2
+RewriteRule ^([a-zA-Z_-]+)/([a-zA-Z_-]+)/$ index.php?component=$1&function=$2
+RewriteRule ^([a-zA-Z_-]+)/([a-zA-Z_-]+)/([0-9a-zA-Z\-_.]+)$ index.php?component=$1&function=$2&para1=$3
+RewriteRule ^([a-zA-Z_-]+)/([a-zA-Z_-]+)/([0-9a-zA-Z\-_.]+)/$ index.php?component=$1&function=$2&para1=$3
+RewriteRule ^([a-zA-Z_-]+)/([a-zA-Z_-]+)/([0-9a-zA-Z\-_.]+)/([0-9a-zA-Z\-_.]+)$ index.php?component=$1&function=$2&para1=$3&para2=$4
+RewriteRule ^([a-zA-Z_-]+)/([a-zA-Z_-]+)/([0-9a-zA-Z\-_.]+)/([0-9a-zA-Z\-_.]+)/$ index.php?component=$1&function=$2&para1=$3&para2=$4
+RewriteRule ^([a-zA-Z_-]+)/([a-zA-Z_-]+)/([0-9a-zA-Z\-_.]+)/([0-9a-zA-Z\-_.]+)/([0-9a-zA-Z\-_.]+)$ index.php?component=$1&function=$2&para1=$3&para2=$4&para3=$5
+RewriteRule ^([a-zA-Z_-]+)/([a-zA-Z_-]+)/([0-9a-zA-Z\-_.]+)/([0-9a-zA-Z\-_.]+)/([0-9a-zA-Z\-_.]+)/$ index.php?component=$1&function=$2&para1=$3&para2=$4&para3=$5
